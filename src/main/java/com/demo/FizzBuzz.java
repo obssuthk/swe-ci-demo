@@ -27,7 +27,7 @@ public class FizzBuzz
           }
 	}
 	
-	String processNumbers (int[] numList)
+	String processNumbers (int[] nums)
 	{
     String temp = "";
     if(nums.length == 0)
