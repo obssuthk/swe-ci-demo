@@ -38,23 +38,23 @@ public class FizzBuzz
         {
           if(nums[i] == 0)
           {
-            temp += String.valueOf(0) + ",";  
+            temp += String.valueOf(0) + ", ";  
           }
           else if(nums[i] % 15 == 0)
           {
-            temp += "FizzBuzz,";
+            temp += "FizzBuzz, ";
           }
           else if(nums[i] % 5 == 0)
           {
-            temp += "Buzz,";
+            temp += "Buzz, ";
           }
           else if(nums[i] % 3 == 0)
           {
-            temp += "Fizz,";
+            temp += "Fizz, ";
           }
           else
           {
-            temp += String.valueOf(nums[i]) + ",";
+            temp += String.valueOf(nums[i]) + ", ";
           }
 		
 		
