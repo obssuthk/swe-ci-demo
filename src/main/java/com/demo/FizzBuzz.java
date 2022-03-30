@@ -11,15 +11,15 @@ public class FizzBuzz
           }
           else if(num % 15 == 0)
           {
-            return "fizz buzz";
+            return "FizzBuzz";
           }
           else if(num % 5 == 0)
           {
-            return "buzz";
+            return "Buzz";
           }
           else if(num % 3 == 0)
           {
-            return "fizz";
+            return "Fizz";
           }
           else
           {
@@ -34,7 +34,7 @@ public class FizzBuzz
           {
             return "invalid";
           }
-        for(int i = 0; i < nums.length; i++)
+        for(int i = 0; i < nums.length-1; i++)
         {
           if(nums[i] == 0)
           {
@@ -42,21 +42,43 @@ public class FizzBuzz
           }
           else if(nums[i] % 15 == 0)
           {
-            temp += "fizz buzz,";
+            temp += "FizzBuzz,";
           }
           else if(nums[i] % 5 == 0)
           {
-            temp += "buzz,";
+            temp += "Buzz,";
           }
           else if(nums[i] % 3 == 0)
           {
-            temp += "fizz,";
+            temp += "Fizz,";
           }
           else
           {
             temp += String.valueOf(nums[i]) + ",";
           }
+		
+		
         }
+	if(nums[i] == 0)
+          {
+            temp += String.valueOf(0);  
+          }
+          else if(nums[i] % 15 == 0)
+          {
+            temp += "FizzBuzz";
+          }
+          else if(nums[i] % 5 == 0)
+          {
+            temp += "Buzz";
+          }
+          else if(nums[i] % 3 == 0)
+          {
+            temp += "Fizz";
+          }
+          else
+          {
+            temp += String.valueOf(nums[i]);
+          }
         return temp;
 	}
 
